@@ -41,24 +41,22 @@ const boundRemoveComment = id => dispatch(removeComment(id));
 
 ////////////////////////////////////////////////////////////////////////
 
-function thumbUpComment(id, votes) {
+function thumbUpComment(id) {
     return {
         type: THUMB_UP_COMMENT,
-        id,
-        votes: +1
+        id
     }
 }
 
-const boundThumbUpComment = (id, votes) => dispatch(thumbUpComment(id, votes));
+const boundThumbUpComment = (id) => dispatch(thumbUpComment(id));
 
 ////////////////////////////////////////////////////////////////////////
 
-function thumbUpComment(id, votes) {
+function thumbUpComment(id) {
     return {
         type: THUMB_DOWN_COMMENT,
-        id,
-        votes: -1
+        id
     }
 }
 
-const boundThumbDownComment = (id, votes) => dispatch(thumbDownComment(id, votes));
+const boundThumbDownComment = (id) => dispatch(thumbDownComment(id));
